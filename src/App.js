@@ -1,10 +1,15 @@
 import React from 'react';
 import './App.css';
+import GivestTitle from './component/GivestTitle';
+import Leaderboard from './component/Leaderboard';
+import DonateButton from './component/DonateButton';
 
 function App() {
   return (
     <div className="App">
-      <h1>hello world</h1>
+      <GivestTitle />
+      <Leaderboard />
+      <DonateButton />
     </div>
   );
 }
