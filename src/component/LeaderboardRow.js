@@ -38,6 +38,41 @@ export default function LeaderboardRow() {
                 <td>Wounded warrior</td>
                 <td><a href="https://www.w3schools.com/html/html_links.asp" target="_blank" rel="noopener noreferrer">Link</a></td>
             </tr>
+            <tr>
+                <td>6</td>
+                <td>$20.00</td>
+                <td>Eli Perkins</td>
+                <td>Wounded warrior</td>
+                <td><a href="https://www.w3schools.com/html/html_links.asp" target="_blank" rel="noopener noreferrer">Link</a></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>$20.00</td>
+                <td>Eli Perkins</td>
+                <td>Wounded warrior</td>
+                <td><a href="https://www.w3schools.com/html/html_links.asp" target="_blank" rel="noopener noreferrer">Link</a></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>$20.00</td>
+                <td>Eli Perkins</td>
+                <td>Wounded warrior</td>
+                <td><a href="https://www.w3schools.com/html/html_links.asp" target="_blank" rel="noopener noreferrer">Link</a></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>$20.00</td>
+                <td>Eli Perkins</td>
+                <td>Wounded warrior</td>
+                <td><a href="https://www.w3schools.com/html/html_links.asp" target="_blank" rel="noopener noreferrer">Link</a></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>$20.00</td>
+                <td>Eli Perkins</td>
+                <td>Wounded warrior</td>
+                <td><a href="https://www.w3schools.com/html/html_links.asp" target="_blank" rel="noopener noreferrer">Link</a></td>
+            </tr>
         </tbody>
     )
 }
