@@ -1,6 +1,6 @@
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dfdfdf)) fixed;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e2e2e2)) fixed;
 }
 
 .App {
@@ -12,11 +12,48 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
-  border-collapse: collapse;
+  border-collapse: separate; 
+  border-spacing: 0 10px; 
+  margin-top: -10px; /* correct offset on first border spacing if desired */
+  --table-row-radius: 10px;
 }
 
 .Leaderboard tbody tr {
   line-height: 70px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
+  border-radius: var(--table-row-radius);
+}
+
+td {
+  background-color: white;
+}
+td:first-child {
+  border-top-left-radius: var(--table-row-radius); 
+  border-bottom-left-radius: var(--table-row-radius);
+}
+td:last-child {
+  border-bottom-right-radius: var(--table-row-radius); 
+  border-top-right-radius: var(--table-row-radius); 
+}
+
+.DonateDiv{
+  background-color: white;
+  width: 200px;
+  border-radius: 10px;
+  position: fixed;
+  left: 50%;
+  bottom: -40px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.DonateDiv button{
+  background-color: #ACACAC;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 30px;
+  font-size: 16px;
+  margin-bottom: 8px;
 }
