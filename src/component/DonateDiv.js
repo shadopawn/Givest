@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function DonateButton() {
+export default function DonateDiv() {
     return (
         <div className="DonateDiv">
             <h4>Start competeing</h4>
