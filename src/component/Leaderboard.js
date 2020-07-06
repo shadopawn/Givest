@@ -1,7 +1,13 @@
-import React from 'react'
+import React,  {useState } from 'react'
 import LeaderboardRow from './LeaderboardRow'
 
 export default function Leaderboard() {
+
+    const [rows, setRows] = useState([
+        {position: 1, dollarAmmount:"$100.00", name:"Japperales", charity:"Red Cross", linkURL:"https://www.w3schools.com/html/html_links.asp"},
+        {position: 2, dollarAmmount:"$75.00", name:"Delitt", charity:"ASPCA", linkURL:"https://www.w3schools.com/html/html_links.asp"},
+    ]);
+
     return (
         <table className="Leaderboard">
             <thead>
@@ -33,7 +39,9 @@ export default function Leaderboard() {
                     </th>
                 </tr>
             </thead>
-            <LeaderboardRow />
+            {rows.map(item => (
+                <LeaderboardRow key={item.position} row={item} />
+            ))}
         </table>
     )
 }
