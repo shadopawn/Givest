@@ -1,4 +1,4 @@
-import React,  {useState } from 'react'
+import React,  { useState } from 'react'
 import LeaderboardRow from './LeaderboardRow'
 
 export default function Leaderboard() {
@@ -9,7 +9,7 @@ export default function Leaderboard() {
         {position: 3, dollarAmmount:"$63.00", name:"twilliams", charity:"Red Cross", linkURL:"https://www.w3schools.com/html/html_links.asp"},
         {position: 4, dollarAmmount:"$55.00", name:"Janet Cross", charity:"Doctors Without Borders", linkURL:"https://www.w3schools.com/html/html_links.asp"},
         {position: 5, dollarAmmount:"$20.00", name:"Eli Perkins", charity:"Wounded Warrior", linkURL:"https://www.w3schools.com/html/html_links.asp"},
-        {position: 6, dollarAmmount:"$17.50", name:"John Snowden", charity:"ASPCA", linkURL:"https://www.w3schools.com/html/html_links.asp"},
+        {position: 6, dollarAmmount:"$17.50", name:"Edward Snowden", charity:"NSA", linkURL:"https://www.w3schools.com/html/html_links.asp"},
     ]);
 
     return (
