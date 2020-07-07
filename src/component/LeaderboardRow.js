@@ -6,7 +6,7 @@ export default function LeaderboardRow(props) {
         <tbody>
             <tr>
                 <td>{row.position}</td>
-                <td>{row.dollarAmmount}</td>
+                <td>${row.dollarAmmount.toFixed(2)}</td>
                 <td>{row.name}</td>
                 <td>{row.charity}</td>
                 <td><a href={row.linkURL} target="_blank" rel="noopener noreferrer">Link</a></td>
