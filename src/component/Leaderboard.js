@@ -6,6 +6,10 @@ export default function Leaderboard() {
     const [rows, setRows] = useState([
         {position: 1, dollarAmmount:"$100.00", name:"Japperales", charity:"Red Cross", linkURL:"https://www.w3schools.com/html/html_links.asp"},
         {position: 2, dollarAmmount:"$75.00", name:"Delitt", charity:"ASPCA", linkURL:"https://www.w3schools.com/html/html_links.asp"},
+        {position: 3, dollarAmmount:"$63.00", name:"twilliams", charity:"Red Cross", linkURL:"https://www.w3schools.com/html/html_links.asp"},
+        {position: 4, dollarAmmount:"$55.00", name:"Janet Cross", charity:"Doctors Without Borders", linkURL:"https://www.w3schools.com/html/html_links.asp"},
+        {position: 5, dollarAmmount:"$20.00", name:"Eli Perkins", charity:"Wounded Warrior", linkURL:"https://www.w3schools.com/html/html_links.asp"},
+        {position: 6, dollarAmmount:"$17.50", name:"John Snowden", charity:"ASPCA", linkURL:"https://www.w3schools.com/html/html_links.asp"},
     ]);
 
     return (
