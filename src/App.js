@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import GivestTitle from './component/GivestTitle';
-import Leaderboard from './component/Leaderboard';
-import DonateDiv from './component/DonateDiv';
+import GivestTitle from './components/GivestTitle';
+import Leaderboard from './components/Leaderboard';
+import DonateDiv from './components/DonateDiv';
 
 function App() {
   return (

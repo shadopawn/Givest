@@ -15,8 +15,10 @@ export default function Leaderboard() {
     // an array of objects
     function insertRow(rowToInsert) {
         let rowInserted = false;
-        if(rows.length === 0)
+        if(rows.length === 0){
+            rowToInsert.position = 1;
             rows.push(rowToInsert)
+        }
         else {
             for (let i = 0, len = rows.length; i < len; i++) {
                 if (rowToInsert.dollarAmmount > rows[i].dollarAmmount && !rowInserted) {
