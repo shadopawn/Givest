@@ -3,7 +3,7 @@ import React from 'react'
 export default function LeaderboardRow({row}) {
     return (
         <tbody>
-            <tr>
+            <tr data-testid="leaderboard-row">
                 <td>{row.position}</td>
                 <td>${row.dollarAmmount.toFixed(2)}</td>
                 <td>{row.name}</td>
