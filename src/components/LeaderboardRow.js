@@ -1,7 +1,6 @@
 import React from 'react'
 
-export default function LeaderboardRow(props) {
-    const row = props.row;
+export default function LeaderboardRow({row}) {
     return (
         <tbody>
             <tr>
