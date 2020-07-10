@@ -4,7 +4,7 @@ import LeaderboardRow from './LeaderboardRow'
 export default function Leaderboard({rows}) {
 
     return (
-        <table className="Leaderboard">
+        <table className="Leaderboard" data-testid="leaderboard">
             <thead>
                 <tr>
                     <th>

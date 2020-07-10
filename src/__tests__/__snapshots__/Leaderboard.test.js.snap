@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Leaderboard rows 1`] = `
+Array [
+  <tr
+    data-testid="leaderboard-row"
+  >
+    <td>
+      1
+    </td>
+    <td>
+      $
+      100.00
+    </td>
+    <td>
+      Japperales
+    </td>
+    <td>
+      Red Cross
+    </td>
+    <td>
+      <a
+        href="https://www.w3schools.com/html/html_links.asp"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Link
+      </a>
+    </td>
+  </tr>,
+  <tr
+    data-testid="leaderboard-row"
+  >
+    <td>
+      2
+    </td>
+    <td>
+      $
+      75.00
+    </td>
+    <td>
+      Delitt
+    </td>
+    <td>
+      ASPCA
+    </td>
+    <td>
+      <a
+        href="https://www.w3schools.com/html/html_links.asp"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Link
+      </a>
+    </td>
+  </tr>,
+]
+`;
