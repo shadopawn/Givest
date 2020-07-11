@@ -1,4 +1,4 @@
-import React,  { useState } from 'react'
+import React from 'react'
 import LeaderboardRow from './LeaderboardRow'
 
 export default function Leaderboard({rows}) {
