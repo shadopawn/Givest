@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import GivestTitle from './components/GivestTitle';
 import Leaderboard from './components/Leaderboard';
