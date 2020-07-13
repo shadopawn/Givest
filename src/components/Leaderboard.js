@@ -39,7 +39,7 @@ export default function Leaderboard(props) {
 		}
 	}
 
-    insertLeaderboardRow({position: 0, dollarAmmount:99.00, name:"Testy", charity:"test", linkURL:"https://www.w3schools.com/html/html_links.asp"});
+    //insertLeaderboardRow({position: 0, dollarAmmount:99.00, name:"Testy", charity:"test", linkURL:"https://www.w3schools.com/html/html_links.asp"});
     
     const renderedRows = props.rows ? props.rows : rows;
 

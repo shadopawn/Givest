@@ -1,8 +1,9 @@
 import React from 'react'
 
-export default function DonateFooter() {
+export default function DonateFooter({showDonationModal}) {
     
     const handleClick = (word) => {
+        showDonationModal();
         console.log(word);
     }
 
