@@ -1,10 +1,9 @@
 import React from 'react'
 
-export default function DonateDiv({insertLeaderboardRow}) {
+export default function DonateDiv() {
     
     const handleClick = (word) => {
-        insertLeaderboardRow({position: 0, dollarAmmount:99.00, name:"Testy", charity:"test", linkURL:"https://www.w3schools.com/html/html_links.asp"});
-        //console.log(word);
+        console.log(word);
     }
 
     return (
