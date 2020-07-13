@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function DonationModal(props) {
+function DonationModal({show, closeModal}) {
     
-    if (props.show === false){
+    if (show === false){
         return null;
     }
 
     const handleClick = () => {
-        props.closeModal();
+        closeModal();
         console.log("close button clicked")
     };
     
