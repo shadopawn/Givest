@@ -41,7 +41,7 @@ td:last-child {
   border-top-right-radius: var(--table-row-radius); 
 }
 
-.DonateDiv{
+.DonateFooter{
   background-color: white;
   width: 225px;
   border-radius: 10px;
@@ -53,12 +53,12 @@ td:last-child {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.DonateDiv h4{
+.DonateFooter h4{
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.DonateDiv button{
+.DonateFooter button{
   background-color: #6FA0FF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: none;
@@ -70,6 +70,6 @@ td:last-child {
   transition-duration: 0.4s;
 }
 
-.DonateDiv button:hover{
+.DonateFooter button:hover{
   background-color: #8fb4ff;
 }

@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import './App.css';
 import GivestTitle from './components/GivestTitle';
 import Leaderboard from './components/Leaderboard';
-import DonateDiv from './components/DonateDiv';
+import DonateFooter from './components/DonateFooter';
 
 function App() {
 	return (
 		<div className="App">
 			<GivestTitle />
 			<Leaderboard />
-			<DonateDiv />
+			<DonateFooter />
 		</div>
 	);
 }
