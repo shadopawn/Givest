@@ -3,19 +3,30 @@ import PropTypes from 'prop-types'
 
 function DonationModal({show, closeModal}) {
     
+    const handleClick = () => {
+        closeModal();
+        console.log("Finish Donation button clicked")
+    };
+    
     if (show === false){
         return null;
     }
 
-    const handleClick = () => {
-        closeModal();
-        console.log("close button clicked")
-    };
-    
     return (
         <div>
-            <p>Hello Modal</p>
-            <button onClick={() => handleClick()}> close </button>
+            <form onSubmit={() => handleClick()}>
+                <input type="text"/><br/>
+                <input type="text"/><br/>
+                <select>
+                    <option value="Doctors Without Borders">Doctors Without Borders</option>
+                    <option value="ASPCA">ASPCA</option>
+                    <option value="Red Cross">Red Cross</option>
+                    <option value="Wounded Warrior">Wounded Warrior</option>
+                    <option value="The Developers">The Developers</option>
+                </select><br/>
+                <input type="text"/><br/>
+                <input type="submit" value="Finish Donation" />
+            </form>
         </div>
     )
 }
