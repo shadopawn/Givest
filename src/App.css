@@ -6,12 +6,13 @@ body {
 .App {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  --standard-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .GivestTitle{
   opacity: 0.6;
   font-size: 36px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: var(--standard-shadow);
 }
 
 .Leaderboard {
@@ -22,13 +23,11 @@ body {
   border-spacing: 0 10px;
   --table-row-radius: 10px;
 }
-
 .Leaderboard tbody tr {
   line-height: 70px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--standard-shadow);
   border-radius: var(--table-row-radius);
 }
-
 td {
   background-color: white;
 }
@@ -41,6 +40,16 @@ td:last-child {
   border-top-right-radius: var(--table-row-radius); 
 }
 
+.DonationModal{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: var(--standard-shadow);
+}
+
 .DonateFooter{
   background-color: white;
   width: 225px;
@@ -50,17 +59,15 @@ td:last-child {
   bottom: -35px;
   transform: translate(-50%, -50%);
   margin: 0 auto;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--standard-shadow);
 }
-
 .DonateFooter h4{
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 .DonateFooter button{
   background-color: #6FA0FF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--standard-shadow);
   border: none;
   border-radius: 10px;
   color: white;
@@ -69,7 +76,6 @@ td:last-child {
   margin-bottom: 8px;
   transition-duration: 0.4s;
 }
-
 .DonateFooter button:hover{
   background-color: #8fb4ff;
 }
