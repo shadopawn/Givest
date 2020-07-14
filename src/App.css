@@ -54,6 +54,9 @@ td:last-child {
   top: 8px;
   right: 8px;
 }
+.DonationModal svg:hover path{
+  fill: #9c9c9c;
+}
 .DonationModal form{
   margin: 60px 25px 25px;
 }
