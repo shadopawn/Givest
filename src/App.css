@@ -54,6 +54,9 @@ td:last-child {
   top: 8px;
   right: 8px;
 }
+.DonationModal path{
+  transition-duration: 0.4s;
+}
 .DonationModal svg:hover path{
   fill: #9c9c9c;
 }
