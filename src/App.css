@@ -45,9 +45,11 @@ td:last-child {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  min-width: 330px;
   background-color: white;
   border-radius: 10px;
   box-shadow: var(--standard-shadow);
+  z-index: 1;
 }
 .DonationModal svg{
   position: absolute;
@@ -86,6 +88,10 @@ td:last-child {
 }
 .DonationModal input[type=submit]:hover{
   background-color: #8fb4ff;
+}
+
+.PayPalButtons{
+  margin: 60px 25px 25px;
 }
 
 .DonateFooter{

@@ -47,17 +47,20 @@ class PaypalButton extends React.Component {
       }
     }
   }
+
   createOrder = (data, actions) => {
     return actions.order.create({
       purchase_units: [
         {
-          description: +"Mercedes G-Wagon",
+          description: +"Donation",
           amount: {
             currency_code: "USD",
-            value: 200
+            value: 1
           }
+        }],
+        application_context: {
+            shipping_preference: 'NO_SHIPPING'
         }
-      ]
     });
   };
 
@@ -90,7 +93,7 @@ class PaypalButton extends React.Component {
 
         {paid && (
           <div className="main">
-            <h1>Thank you for your donation</h1>
+            <p>Thank you for your donation</p>
           </div>
         )}
       </div>
