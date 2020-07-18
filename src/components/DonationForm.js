@@ -4,15 +4,20 @@ import PropTypes from 'prop-types'
 function DonationForm({formSubmit}) {
     
     let formData = {
-        donationAmmount : 1,
-        name: "",
+        donationAmmount : "",
+        name: "Anonymous",
         charity: "",
         customLink: ""
     };
 
     const handleSubmit = (event) => {
-        formSubmit(formData);
         event.preventDefault();
+        
+        if(isInputValid() === false){
+            return;
+        }
+
+        formSubmit(formData);
     };
 
     const handleChange = (event) => {
@@ -34,6 +39,30 @@ function DonationForm({formSubmit}) {
             default:
         }
     };
+
+    function isInputValid(){
+        if(isNaN(formData.donationAmmount) || formData.donationAmmount < 1){
+            alert("Please put a positive number in Donation Ammount");
+            return false;
+        }
+
+        if (validURL(formData.customLink) === false){
+            alert("Please input a valid link");
+            return false;
+        }
+
+        return true;
+    }
+
+    function validURL(str) {
+        var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
+          '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
+          '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
+          '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
+          '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
+          '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
+        return !!pattern.test(str);
+      }
     
     return (
         <form onSubmit={(event) => handleSubmit(event)}>
