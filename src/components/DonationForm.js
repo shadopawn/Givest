@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
-function DonationForm({formSubmit}) {
+function DonationForm({submitForm}) {
     
     let formData = {
-        donationAmmount : "",
+        donationAmmount : 5,
         name: "Anonymous",
-        charity: "",
+        charity: "The Developers",
         customLink: ""
     };
 
@@ -17,7 +17,7 @@ function DonationForm({formSubmit}) {
             return;
         }
 
-        formSubmit(formData);
+        submitForm(formData);
     };
 
     const handleChange = (event) => {
@@ -62,14 +62,14 @@ function DonationForm({formSubmit}) {
           '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
           '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
         return !!pattern.test(str);
-      }
+    }
     
     return (
         <form onSubmit={(event) => handleSubmit(event)}>
             <input name="Donation Ammount" type="text" placeholder="Donation Ammount" onChange={(event) => handleChange(event)}/><br/>
             <input name="Name" type="text" placeholder="Name" onChange={(event) => handleChange(event)}/><br/>
             <select name="Charity Selection" onChange={(event) => handleChange(event)}>
-                <option value="Select Charity">Select Charity</option>
+                <option value="Select Charity" disabled selected hidden>Select Charity</option>
                 <option value="The Developers">The Developers</option>
                 <option value="Doctors Without Borders">Doctors Without Borders</option>
                 <option value="ASPCA">ASPCA</option>
@@ -83,7 +83,7 @@ function DonationForm({formSubmit}) {
 }
 
 DonationForm.propTypes = {
-    formSubmit: PropTypes.func.isRequired
+    submitForm: PropTypes.func.isRequired
 }
 
 export default DonationForm
