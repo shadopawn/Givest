@@ -32,7 +32,7 @@ function DonationForm({formSubmit}) {
                 formData.customLink = target.value;
                 break;
             default:
-          }
+        }
     };
     
     return (
