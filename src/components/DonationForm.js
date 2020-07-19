@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
 function DonationForm({submitForm}) {
@@ -41,7 +41,7 @@ function DonationForm({submitForm}) {
     };
 
     function isInputValid(){
-        if(isNaN(formData.donationAmmount) || formData.donationAmmount < 1){
+        if(isNaN(formData.donationAmmount) || formData.donationAmmount <= 0){
             alert("Please put a positive number in Donation Ammount");
             return false;
         }
