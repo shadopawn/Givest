@@ -8,18 +8,16 @@ afterEach(cleanup)
 test("renders Leaderboard rows", () => {
   const testRows = [
     {
-      position: 1,
-      dollarAmmount: 100.0,
+      donationAmmount: 100.0,
       name: "Japperales",
       charity: "Red Cross",
-      linkURL: "https://www.w3schools.com/html/html_links.asp",
+      customLink: "https://www.w3schools.com/html/html_links.asp",
     },
     {
-      position: 2,
-      dollarAmmount: 75.0,
+      donationAmmount: 75.0,
       name: "Delitt",
       charity: "ASPCA",
-      linkURL: "https://www.w3schools.com/html/html_links.asp",
+      customLink: "https://www.w3schools.com/html/html_links.asp",
     },
   ];
   const { getAllByTestId } = render(<Leaderboard rows={testRows} />);

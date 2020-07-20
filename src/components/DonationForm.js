@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 function DonationForm({submitForm}) {
     
     let formData = {
-        donationAmmount: 5,
+        donationAmmount: "5",
         name: "Anonymous",
         charity: "The Developers",
         customLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
@@ -25,7 +25,7 @@ function DonationForm({submitForm}) {
         const fromName = target.name;
         switch(fromName) {
             case "Donation Ammount":
-                formData.donationAmmount = target.value;
+                formData.donationAmmount = parseFloat(target.value);
                 break;
             case "Name":
                 formData.name = target.value;
