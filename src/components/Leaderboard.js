@@ -10,7 +10,7 @@ export default function Leaderboard(props) {
 		{position: 4, dollarAmmount:55.00, name:"Janet Cross", charity:"Doctors Without Borders", linkURL:"https://www.w3schools.com/html/html_links.asp"},
 		{position: 5, dollarAmmount:20.00, name:"Eli Perkins", charity:"Wounded Warrior", linkURL:"https://www.w3schools.com/html/html_links.asp"},
 		{position: 6, dollarAmmount:17.50, name:"Edward Snowden", charity:"NSA", linkURL:"https://www.w3schools.com/html/html_links.asp"},
-    ]); 
+    ]);
 
 	function insertLeaderboardRow(rowToInsert) {
 		let rowInserted = false;

@@ -4,10 +4,10 @@ import PropTypes from 'prop-types'
 function DonationForm({submitForm}) {
     
     let formData = {
-        donationAmmount : 5,
+        donationAmmount: 5,
         name: "Anonymous",
         charity: "The Developers",
-        customLink: ""
+        customLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     };
 
     const handleSubmit = (event) => {
