@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import scriptLoader from "react-async-script-loader";
 import Spinner from "./Spinner";
+import { writeDonationData } from "../firebaseFunctions";
 
 
 const CLIENT_ID =
@@ -55,7 +56,7 @@ class PaypalButton extends React.Component {
           description: +"Donation",
           amount: {
             currency_code: "USD",
-            value: this.props.donationAmmount
+            value: this.props.formData.donationAmmount
           }
         }],
         application_context: {
@@ -72,6 +73,7 @@ class PaypalButton extends React.Component {
       };
       console.log("Payment Approved: ", paymentData);
       this.setState({ showButtons: false, paid: true });
+      writeDonationData(this.props.formData);
     });
   };
 
