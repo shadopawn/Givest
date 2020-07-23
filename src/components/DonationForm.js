@@ -1,10 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { charityList } from '../charityInfo';
+import SelectOption from './SelectOption';
 
 function DonationForm({submitForm}) {
     
     let formData = {
-        donationAmmount: "5",
+        donationAmmount: 5,
         name: "Anonymous",
         charity: "The Developers",
         customLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
@@ -63,7 +65,7 @@ function DonationForm({submitForm}) {
           '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
         return !!pattern.test(str);
     }
-    
+
     return (
         <form onSubmit={(event) => handleSubmit(event)}>
             <input name="Donation Ammount" type="text" placeholder="Donation Ammount" onChange={(event) => handleChange(event)}/><br/>
@@ -71,10 +73,9 @@ function DonationForm({submitForm}) {
             <select name="Charity Selection" onChange={(event) => handleChange(event)}>
                 <option value="Select Charity" disabled selected hidden>Select Charity</option>
                 <option value="The Developers">The Developers</option>
-                <option value="Doctors Without Borders">Doctors Without Borders</option>
-                <option value="ASPCA">ASPCA</option>
-                <option value="Red Cross">Red Cross</option>
-                <option value="Wounded Warrior">Wounded Warrior</option>
+                {charityList.map((item, index) => (
+                    <SelectOption key={index} charity={item} />
+                ))}
             </select><br/>
             <input name="Custom Link" type="text" placeholder="Custom Link" onChange={(event) => handleChange(event)}/><br/>
             <input type="submit" value="Finish Donation" />
