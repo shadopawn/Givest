@@ -1,5 +1,9 @@
 export const charityList = [
     {
+        charityName: "The Developers",
+        charityLink: "https://daniellitt.wixsite.com/website"
+    },
+    {
         charityName: "Doctors Without Borders",
         charityLink: "https://www.doctorswithoutborders.org/"
     },

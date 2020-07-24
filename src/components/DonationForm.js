@@ -72,7 +72,6 @@ function DonationForm({submitForm}) {
             <input name="Name" type="text" placeholder="Name" onChange={(event) => handleChange(event)}/><br/>
             <select name="Charity Selection" onChange={(event) => handleChange(event)}>
                 <option value="Select Charity" disabled selected hidden>Select Charity</option>
-                <option value="The Developers">The Developers</option>
                 {charityList.map((item, index) => (
                     <SelectOption key={index} charity={item} />
                 ))}
