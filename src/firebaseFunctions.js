@@ -13,8 +13,21 @@ export function readDonationData(callBackFunction){
         snapshot.forEach(function(childSnapshot) {
             donationList.push(childSnapshot.val())
         });
-        console.log(donationList);
+        //console.log(donationList);
         if (callBackFunction)
             callBackFunction(donationList.reverse());
+    });
+}
+
+export function totalDonated(callBackFunction){
+    const donationListRef = firebase.database().ref().child('donation-list');
+    return donationListRef.once('value', function(snapshot) {
+        var donationTotal = 0;
+        snapshot.forEach(function(childSnapshot) {
+            donationTotal += childSnapshot.child('donationAmmount').val();
+        });
+        //console.log(donationTotal);
+        if(callBackFunction)
+            callBackFunction(donationTotal);
     });
 }
