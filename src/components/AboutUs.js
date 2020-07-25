@@ -16,7 +16,7 @@ export default function AboutUs() {
             <h3>How we process donations</h3>
             <p>Donation made throught Givest are sent directly to the charity of your choice</p>
             <h3>Total donations</h3>
-            <p>Total donated so far: ${total.toFixed(2)} </p>
+            <p>Total donated so far: ${total.toFixed(2)}</p>
             <h3>Charities</h3>
         </div>
     )

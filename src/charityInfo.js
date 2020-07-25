@@ -1,34 +1,34 @@
 export const charityList = [
     {
-        charityName: "The Developers",
-        charityLink: "https://daniellitt.wixsite.com/website"
+        Name: "The Developers",
+        Link: "https://daniellitt.wixsite.com/website"
     },
     {
-        charityName: "Doctors Without Borders",
-        charityLink: "https://www.doctorswithoutborders.org/"
+        Name: "Doctors Without Borders",
+        Link: "https://www.doctorswithoutborders.org/"
     },
     {
-        charityName: "American Red Cross",
-        charityLink: "https://www.redcross.org/"
+        Name: "American Red Cross",
+        Link: "https://www.redcross.org/"
     },
     {
-        charityName: "The Nature Conservancy",
-        charityLink: "https://www.nature.org/en-us/"
+        Name: "The Nature Conservancy",
+        Link: "https://www.nature.org/en-us/"
     },
     {
-        charityName: "ASPCA",
-        charityLink: "https://www.aspca.org/"
+        Name: "ASPCA",
+        Link: "https://www.aspca.org/"
     },
     {
-        charityName: "Disable American Veterans",
-        charityLink: "https://www.dav.org/"
+        Name: "Disabled American Veterans",
+        Link: "https://www.dav.org/"
     },
     {
-        charityName: "Save The Children",
-        charityLink: "https://www.savethechildren.org/"
+        Name: "Save The Children",
+        Link: "https://www.savethechildren.org/"
     },
     {
-        charityName: "Black Lives Matter",
-        charityLink: "https://blacklivesmatter.com/"
+        Name: "Black Lives Matter",
+        Link: "https://blacklivesmatter.com/"
     },
 ]

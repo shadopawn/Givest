@@ -21,7 +21,7 @@ export function readDonationData(callBackFunction){
 
 export function totalDonated(callBackFunction){
     const donationListRef = firebase.database().ref().child('donation-list');
-    return donationListRef.once('value', function(snapshot) {
+    return donationListRef.on('value', function(snapshot) {
         var donationTotal = 0;
         snapshot.forEach(function(childSnapshot) {
             donationTotal += childSnapshot.child('donationAmmount').val();
