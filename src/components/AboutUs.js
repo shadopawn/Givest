@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { totalDonated } from '../firebaseFunctions'
+import CharityCard from './CharityCard';
+import { charityList } from '../charityInfo';
 
 export default function AboutUs() {
     
@@ -18,6 +20,11 @@ export default function AboutUs() {
             <h3>Total donations</h3>
             <p>Total donated so far: ${total.toFixed(2)}</p>
             <h3>Charities</h3>
+            <table>
+                {charityList.map((item, index) => (
+                    <CharityCard key={index} charity={item}/>
+                ))}
+            </table>
         </div>
     )
 }
