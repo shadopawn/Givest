@@ -21,7 +21,7 @@ export const charityList = [
         name: "The Nature Conservancy",
         link: "https://www.nature.org/en-us/",
         description: "The Nature Conservancy is a charitable environmental organization, headquartered in Arlington, Virginia, United States. Founded in 1951, The Nature Conservancy has over one million members, and has protected more than 119,000,000 acres of land and thousands of miles of rivers worldwide.",
-        logoURL: "https://www.greatlakesnow.org/wp-content/uploads/2017/01/logo-nature.png",
+        logoURL: "https://images.squarespace-cdn.com/content/v1/54aed6cee4b060149458baf1/1519052355044-4IGCQVGAQSHXUBRJO2B6/ke17ZwdGBToddI8pDm48kCNtot3vrE2sNYlaQ6cY7RFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI4qTO-rVw-7KD42KpuL3Zq2b6qV70rcNQCKKPwoodJXs/TNC-Partner-Logo-Website.png",
     },
     {
         name: "ASPCA",
