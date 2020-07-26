@@ -8,7 +8,7 @@ function CharityCard({charity}) {
                 <img src={charity.logoURL} alt="logo"/>
             </td>
             <td>
-                <h4><a href={charity.link} target="_blank" rel="noopener noreferrer">{charity.name}</a></h4>
+                <a href={charity.link} target="_blank" rel="noopener noreferrer">{charity.name}</a>
                 <p>total donations: 0</p><br/>
                 <p>{charity.description}</p>
             </td>
