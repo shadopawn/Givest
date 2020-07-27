@@ -7,13 +7,13 @@ export function writeDonationData(donationData){
 
 export function readDonationData(callBackFunction){
     const donationListRef = firebase.database().ref().child('donation-list');
-    const orderdDonationList = donationListRef.orderByChild("donationAmmount");
+    const orderdDonationList = donationListRef.orderByChild("donationAmount");
     orderdDonationList.on('value', function(snapshot) {
         var donationList = []
         snapshot.forEach(function(childSnapshot) {
             donationList.push(childSnapshot.val())
         });
-        //console.log(donationList);
+        console.log(donationList);
         if (callBackFunction)
             callBackFunction(donationList.reverse());
     });
@@ -24,7 +24,7 @@ export function totalDonated(callBackFunction){
     return donationListRef.on('value', function(snapshot) {
         var donationTotal = 0;
         snapshot.forEach(function(childSnapshot) {
-            donationTotal += childSnapshot.child('donationAmmount').val();
+            donationTotal += childSnapshot.child('donationAmount').val();
         });
         //console.log(donationTotal);
         if(callBackFunction)

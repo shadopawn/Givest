@@ -6,7 +6,7 @@ import SelectOption from './SelectOption';
 function DonationForm({submitForm}) {
     
     let formData = {
-        donationAmmount: 5,
+        donationAmount: 5,
         name: "Anonymous",
         charity: "The Developers",
         customLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
@@ -26,8 +26,8 @@ function DonationForm({submitForm}) {
         const target = event.target;
         const fromName = target.name;
         switch(fromName) {
-            case "Donation Ammount":
-                formData.donationAmmount = parseFloat(target.value);
+            case "Donation Amount":
+                formData.donationAmount = parseFloat(target.value);
                 break;
             case "Name":
                 formData.name = target.value;
@@ -43,8 +43,8 @@ function DonationForm({submitForm}) {
     };
 
     function isInputValid(){
-        if(isNaN(formData.donationAmmount) || formData.donationAmmount <= 0){
-            alert("Please put a positive number in Donation Ammount");
+        if(isNaN(formData.donationAmount) || formData.donationAmount <= 0){
+            alert("Please put a positive number in Donation Amount");
             return false;
         }
 
@@ -68,7 +68,7 @@ function DonationForm({submitForm}) {
 
     return (
         <form onSubmit={(event) => handleSubmit(event)}>
-            <input name="Donation Ammount" type="text" placeholder="Donation Ammount" onChange={(event) => handleChange(event)}/><br/>
+            <input name="Donation Amount" type="text" placeholder="Donation Amount" onChange={(event) => handleChange(event)}/><br/>
             <input name="Name" type="text" placeholder="Name" onChange={(event) => handleChange(event)}/><br/>
             <select name="Charity Selection" onChange={(event) => handleChange(event)}>
                 <option value="Select Charity" disabled selected hidden>Select Charity</option>

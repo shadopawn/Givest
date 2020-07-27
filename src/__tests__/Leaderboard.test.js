@@ -8,13 +8,13 @@ afterEach(cleanup)
 test("renders Leaderboard rows", () => {
   const testRows = [
     {
-      donationAmmount: 100.0,
+      donationAmount: 100.0,
       name: "Japperales",
       charity: "Red Cross",
       customLink: "https://www.w3schools.com/html/html_links.asp",
     },
     {
-      donationAmmount: 75.0,
+      donationAmount: 75.0,
       name: "Delitt",
       charity: "ASPCA",
       customLink: "https://www.w3schools.com/html/html_links.asp",

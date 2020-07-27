@@ -56,7 +56,7 @@ class PaypalButton extends React.Component {
           description: +"Donation",
           amount: {
             currency_code: "USD",
-            value: this.props.formData.donationAmmount
+            value: this.props.formData.donationAmount
           }
         }],
         application_context: {
