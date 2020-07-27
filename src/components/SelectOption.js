@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function SelectOption({charity}) {
     return (
-        <option value={charity.Name}>{charity.Name}</option>
+        <option value={charity.name}>{charity.name}</option>
     )
 }
