@@ -1,7 +1,19 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-export default function SelectOption({charity}) {
+function SelectOption({charity}) {
     return (
         <option value={charity.name}>{charity.name}</option>
     )
 }
+
+SelectOption.propTypes = {
+    charity: PropTypes.exact({
+        name: PropTypes.string,
+        link: PropTypes.string,
+        description: PropTypes.string,
+        logoURL: PropTypes.string,
+    }),
+}
+
+export default SelectOption

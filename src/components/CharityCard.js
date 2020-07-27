@@ -17,7 +17,12 @@ function CharityCard({charity}) {
 }
 
 CharityCard.propTypes = {
-    charity: PropTypes.object.isRequired
+    charity: PropTypes.exact({
+        name: PropTypes.string,
+        link: PropTypes.string,
+        description: PropTypes.string,
+        logoURL: PropTypes.string,
+    }),
 }
 
 export default CharityCard
