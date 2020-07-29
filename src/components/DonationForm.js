@@ -48,6 +48,12 @@ function DonationForm({submitForm}) {
             return false;
         }
 
+        let characterlimit = 30
+        if(formData.name.length > characterlimit){
+            alert("Please limit name to less than "+characterlimit+" characters")
+            return false;
+        }
+
         if (validURL(formData.customLink) === false){
             alert("Please input a valid link");
             return false;
