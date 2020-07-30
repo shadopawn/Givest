@@ -59,6 +59,11 @@ function DonationForm({submitForm}) {
             return false;
         }
 
+        if (formData.customLink.indexOf("http://") === -1 && formData.customLink.indexOf("https://") === -1) {
+            alert("Please add https:// to your link");
+            return false;
+        }
+
         return true;
     }
 

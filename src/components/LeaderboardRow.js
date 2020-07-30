@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function LeaderboardRow({row, position}) {
+    
     return (
         <tbody>
             <tr data-testid="leaderboard-row">
