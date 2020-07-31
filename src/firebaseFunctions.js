@@ -47,5 +47,4 @@ export function calculateTotalDonationsForCharities(){
             })
         });
     });
-    console.log(charityList);
 }
