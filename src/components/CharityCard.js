@@ -22,6 +22,7 @@ CharityCard.propTypes = {
         link: PropTypes.string,
         description: PropTypes.string,
         logoURL: PropTypes.string,
+        totalDonated: PropTypes.number,
     }),
 }
 

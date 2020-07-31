@@ -1,4 +1,5 @@
 import * as firebase from 'firebase';
+import { charityList } from './charityInfo';
 
 export function writeDonationData(donationData){
     const donationListRef = firebase.database().ref().child('donation-list');
@@ -21,7 +22,7 @@ export function readDonationData(callBackFunction){
 
 export function totalDonated(callBackFunction){
     const donationListRef = firebase.database().ref().child('donation-list');
-    return donationListRef.on('value', function(snapshot) {
+    donationListRef.on('value', function(snapshot) {
         var donationTotal = 0;
         snapshot.forEach(function(childSnapshot) {
             donationTotal += childSnapshot.child('donationAmount').val();
@@ -30,4 +31,21 @@ export function totalDonated(callBackFunction){
         if(callBackFunction)
             callBackFunction(donationTotal);
     });
+}
+
+// not a pure function should probaly rewrite
+export function calculateTotalDonationsForCharities(){
+    const donationListRef = firebase.database().ref().child('donation-list');
+    donationListRef.once('value', function(snapshot) {
+        snapshot.forEach(function(childSnapshot) {
+            const currentDonationAmount = childSnapshot.child('donationAmount').val();
+            const charityName = childSnapshot.child('charity').val();
+            charityList.forEach(charity => {
+                if (charityName === charity.name){
+                    charity.totalDonated += currentDonationAmount;
+                }
+            })
+        });
+    });
+    console.log(charityList);
 }
