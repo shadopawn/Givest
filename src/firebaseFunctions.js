@@ -33,7 +33,7 @@ export function totalDonated(callBackFunction){
     });
 }
 
-// not a pure function should probaly rewrite
+// not a pure function should definitely rewrite
 export function calculateTotalDonationsForCharities(){
     const donationListRef = firebase.database().ref().child('donation-list');
     donationListRef.once('value', function(snapshot) {
