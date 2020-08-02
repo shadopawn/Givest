@@ -14,7 +14,7 @@ export function readDonationData(callBackFunction){
         snapshot.forEach(function(childSnapshot) {
             donationList.push(childSnapshot.val())
         });
-        console.log(donationList);
+        //console.log(donationList);
         if (callBackFunction)
             callBackFunction(donationList.reverse());
     });
