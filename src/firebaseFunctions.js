@@ -6,6 +6,7 @@ export function writeDonationData(donationData){
     donationListRef.push(donationData);
 }
 
+//TODO: meke this function return sucessive sets of n
 export function readDonationData(callBackFunction){
     const donationListRef = firebase.database().ref().child('donation-list');
     const orderdDonationList = donationListRef.orderByChild("donationAmount");
