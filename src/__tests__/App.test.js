@@ -28,8 +28,8 @@ describe('Renders app components', () => {
 test('Shows modal after clicking donate button', () =>{
 	const { getByText, getByTestId, } = render(<App />);
 	const donateButton = getByText(/donate/i);
-	const leftClick = { button: 1 }
-	fireEvent.click(donateButton, leftClick)
+	const leftClick = { button: 1 };
+	fireEvent.click(donateButton, leftClick);
 	const donationModal = getByTestId("DonationModal");
 	expect(donationModal).toBeInTheDocument();
 });
