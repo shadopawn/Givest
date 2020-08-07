@@ -18,7 +18,7 @@ function App() {
 	return (
 		<div className="App">
 			<GivestTitle />
-			
+			<AboutUs />
 			<Leaderboard />
 			<DonationModal closeModal={() => setShowModal(false)} show={showModal}/>
 			<DonateFooter showDonationModal={() => setShowModal(true)}/>
