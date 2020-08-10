@@ -1,0 +1,14 @@
+.RightPanel{
+    height: 90%;
+    width: 45%;
+    background: #FFFFFF;
+    border-radius: var(--standard-radius);
+    box-shadow: var(--standard-shadow);
+}
+
+.RightPanel h1{
+    font-size: 6vh;
+    margin-top: 20px;
+    margin-left: 35px;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,24 @@
+.LeftPanel{
+  height: 80%;
+  width: 27%;
+  background: #303030;
+  border-top-left-radius: var(--standard-radius);
+  border-bottom-left-radius: var(--standard-radius);
+  box-shadow: var(--standard-shadow);
+  color: white;
+
+}
+
+.LeftPanel h1{
+  font-size: 5vh;
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-bottom: 0px;
+}
+
+.LeftPanel h4{
+  font-size: 2vh;
+  margin-top: 0px;
+  margin-left: 30px;
+  color: rgba(255, 255, 255, 0.73);
+}
