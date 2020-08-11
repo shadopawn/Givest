@@ -19,7 +19,12 @@ function DonationForm({submitForm}) {
             return;
         }
 
-        submitForm(formData);
+        if(submitForm){
+            submitForm(formData);
+        }
+        else{
+            console.error("Null submitForm function for DonationForm")
+        }
     };
 
     const handleChange = (event) => {
@@ -78,17 +83,17 @@ function DonationForm({submitForm}) {
     }
 
     return (
-        <form onSubmit={(event) => handleSubmit(event)}>
-            <input name="Donation Amount" type="text" placeholder="Donation Amount" onChange={(event) => handleChange(event)}/><br/>
-            <input name="Name" type="text" placeholder="Name" onChange={(event) => handleChange(event)}/><br/>
+        <form onSubmit={(event) => handleSubmit(event)} className="formContainer">
+            <input name="Donation Amount" type="text" placeholder="Donation Amount" onChange={(event) => handleChange(event)}/>
+            <input name="Name" type="text" placeholder="Name" onChange={(event) => handleChange(event)}/>
             <select name="Charity Selection" onChange={(event) => handleChange(event)}>
                 <option value="Select Charity" disabled selected hidden>Select Charity</option>
                 {charityList.map((item, index) => (
                     <SelectOption key={index} charity={item} />
                 ))}
-            </select><br/>
-            <input name="Custom Link" type="text" placeholder="Custom Link" onChange={(event) => handleChange(event)}/><br/>
-            <input type="submit" value="Finish Donation" />
+            </select>
+            <input name="Custom Link" type="text" placeholder="Custom Link" onChange={(event) => handleChange(event)}/>
+            <input type="submit" value="DONATE NOW" />
         </form>
     )
 }
