@@ -23,7 +23,7 @@ function DonationForm({submitForm}) {
             submitForm(formData);
         }
         else{
-            console.error("Null submitForm function for DonationForm")
+            console.error("Null submitForm function for DonationForm");
         }
     };
 
