@@ -43,6 +43,10 @@
   height: 40px;
   color: white;
 }
+.LeftPanel input::placeholder {
+  color: white;
+  padding-left: 10px;
+}
 
 /*select styling*/
 .LeftPanel select{
@@ -53,11 +57,6 @@
   background-color: rgb(83, 83, 83);
 }
 /*end of select styling*/
-
-.LeftPanel input::placeholder {
-  color: white;
-  padding-left: 10px;
-}
 
 .LeftPanel input[type=submit]{
   background-color: #00000000;
