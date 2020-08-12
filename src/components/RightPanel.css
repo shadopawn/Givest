@@ -11,17 +11,48 @@
     font-size: 6vh;
     margin-top: 20px;
     margin-left: 35px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .Leaderboard {
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
-    border-collapse: separate; 
-    border-spacing: 0 10px;
+    width: 95%;
+    border-collapse: separate;
+    border-spacing: 15px 30px;
 }
-.Leaderboard tr {
-    line-height: 70px;
+.LeaderboardPosition{
+    font-size: 30px;
+}
+.Leaderboard img {
+    height: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.LeaderboardName{
+    font-size: 30px;
+    margin: 0px 0px;
+}
+.LeaderboardDonationText{
+    font-size: 19px;
+    margin: 0px 0px;
+    color: rgba(0, 0, 0, .5);
+}
+
+.Leaderboard a{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #000000;
+    border-radius: 18px;
+    color: black;
+    padding: 3px 30px;
+    font-size: 18px;
+    margin-top: 10px;
+    transition-duration: 0.4s;
+    text-decoration: none;
+}
+.Leaderboard a:hover{
+    background-color: rgba(0, 0, 0, 0.15);
 }
