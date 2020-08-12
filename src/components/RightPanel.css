@@ -14,3 +14,14 @@
     margin-bottom: 0px;
     font-family: 'Times New Roman', Times, serif;
 }
+
+.Leaderboard {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-collapse: separate; 
+    border-spacing: 0 10px;
+}
+.Leaderboard tr {
+    line-height: 70px;
+}

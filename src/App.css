@@ -21,31 +21,6 @@ html, body {
   text-shadow: var(--standard-shadow);
 }
 
-.Leaderboard {
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-  border-collapse: separate; 
-  border-spacing: 0 10px;
-  --table-row-radius: 10px;
-}
-.Leaderboard tbody tr {
-  line-height: 70px;
-  box-shadow: var(--standard-shadow);
-  border-radius: var(--table-row-radius);
-}
-.Leaderboard td {
-  background-color: white;
-}
-.Leaderboard td:first-child {
-  border-top-left-radius: var(--table-row-radius); 
-  border-bottom-left-radius: var(--table-row-radius);
-}
-.Leaderboard td:last-child {
-  border-bottom-right-radius: var(--table-row-radius); 
-  border-top-right-radius: var(--table-row-radius); 
-}
-
 .DonationModal{
   position: fixed;
   top: 50%;
