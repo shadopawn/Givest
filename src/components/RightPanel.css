@@ -4,6 +4,7 @@
     background: #FFFFFF;
     border-radius: var(--standard-radius);
     box-shadow: var(--standard-shadow);
+    font-family: 'Mukta', sans-serif;
 }
 
 .RightPanel h1{
@@ -11,4 +12,5 @@
     margin-top: 20px;
     margin-left: 35px;
     margin-bottom: 0px;
+    font-family: 'Times New Roman', Times, serif;
 }

@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import './LeftPanel.css';
-import DonationForm from './DonationForm'
+import DonationForm from './DonationForm';
 
 export default function LeftPanel() {
     return (

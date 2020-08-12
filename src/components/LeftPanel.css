@@ -29,7 +29,11 @@
   align-items: center;
   height: 82%;
   width: 100%;
-  --form-font-size: 22px;
+  --form-font-size: 25px;
+}
+
+.LeftPanel input, select{
+  font-family: 'Mukta', sans-serif;
 }
 
 .LeftPanel input[type=text], select {
@@ -61,7 +65,8 @@
 /*select styling*/
 .LeftPanel select{
   padding-left: 0px;
-  color: white;
+  height: 50px;
+  text-indent: 5px;
 }
 .LeftPanel select option{
   background-color: rgb(83, 83, 83);
@@ -74,7 +79,7 @@
   border: 2px solid #FFFFFF;
   border-radius: 20px;
   color: white;
-  padding: 10px 35px;
+  padding: 3px 35px;
   font-size: var(--form-font-size);
   margin-top: 10px;
   transition-duration: 0.4s;
