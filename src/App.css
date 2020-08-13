@@ -15,6 +15,27 @@ html, body {
   --standard-radius: 10px;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(158, 158, 158);
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 .GivestTitle{
   opacity: 0.6;
   font-size: 36px;

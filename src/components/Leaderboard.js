@@ -13,12 +13,14 @@ export default function Leaderboard(props) {
     const renderedRows = props.rows ? props.rows : rows;
 
     return (
-        <table className="Leaderboard" data-testid="leaderboard">
-            <tbody>
-                {renderedRows.map((item, index) => (
-                    <LeaderboardRow key={index} row={item} position={index+1} />
-                ))}
-            </tbody>
-        </table>
+        <div className="LeaderboardContainer">
+            <table className="Leaderboard" data-testid="leaderboard">
+                <tbody>
+                    {renderedRows.map((item, index) => (
+                        <LeaderboardRow key={index} row={item} position={index+1} />
+                    ))}
+                </tbody>
+            </table>
+        </div>
     )
 }

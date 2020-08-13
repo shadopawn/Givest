@@ -15,6 +15,11 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+.LeaderboardContainer{
+    height: 85%;
+    overflow: auto;
+}
+
 .Leaderboard {
     margin-left: auto;
     margin-right: auto;
