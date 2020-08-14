@@ -1,12 +1,24 @@
 import React from 'react';
-import testLogo from '../assets/img/Black_Lives_Matter_Logo.png'
+import PropTypes from 'prop-types'
+import defaultLogo from '../assets/img/Developers.png'
+import { charityList } from '../charityInfo';
 
-export default function LeaderboardRow({row, position}) {
+function LeaderboardRow({row, position}) {
     
+    let renderedLogo;
+
+    charityList.forEach(charity => {
+        if (row.charity === charity.name){
+            renderedLogo = charity.logo;
+        }
+    })
+
+    renderedLogo = renderedLogo ?? defaultLogo;
+
     return (
         <tr data-testid="leaderboard-row">
             <td className="LeaderboardPosition">{position}</td>
-            <td><img src={testLogo} alt="Logo" /></td>
+            <td><img src={renderedLogo} alt="Logo" /></td>
             <td>
                 <p className="LeaderboardName">{row.name}</p>
                 <p className="LeaderboardDonationText">Donated ${row.donationAmount.toFixed(2)} to {row.charity}</p>
@@ -15,3 +27,14 @@ export default function LeaderboardRow({row, position}) {
         </tr>
     )
 }
+
+LeaderboardRow.propTypes = {
+    row: PropTypes.exact({
+        name: PropTypes.string,
+        donationAmount: PropTypes.number,
+        charity: PropTypes.string,
+        customLink: PropTypes.string,
+    }),
+}
+
+export default LeaderboardRow
