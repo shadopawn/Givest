@@ -35,6 +35,7 @@ LeaderboardRow.propTypes = {
         charity: PropTypes.string,
         customLink: PropTypes.string,
     }),
+    position: PropTypes.number,
 }
 
 export default LeaderboardRow

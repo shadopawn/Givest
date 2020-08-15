@@ -81,7 +81,7 @@ class PaypalButton extends React.Component {
     const { showButtons, loading, paid } = this.state;
 
     return (
-      <div className="main">
+      <div className="PayPalButtonContainer">
         {loading && <Spinner />}
 
         {showButtons && (
@@ -94,7 +94,7 @@ class PaypalButton extends React.Component {
         )}
 
         {paid && (
-          <div className="main">
+          <div className="donationComplete">
             <p>Thank you for your donation</p>
           </div>
         )}
