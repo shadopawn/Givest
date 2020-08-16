@@ -10,7 +10,7 @@ import Black_Lives_Matter_Logo from './assets/img/Black_Lives_Matter_Logo.png'
 export const charityList = [
     {
         name: "The Developers",
-        link: "https://daniellitt.wixsite.com/website",
+        link: "https://www.delitt.com/",
         description: "Help us maintain this website.",
         logo: Developers_Logo,
         totalDonated: 0,

@@ -91,7 +91,20 @@
   background-color: #4b4b4b;
 }
 
+.LeftPanel svg{
+  margin-left: 30px;
+  height: 40px;
+  width: 40px;
+}
+.LeftPanel path{
+  transition-duration: 0.4s;
+  fill: #ffffff;
+}
+.LeftPanel svg:hover path{
+  fill: #acacac;
+}
+
 .PayPalButtonContainer{
-  height: 82%;
+  height: 75%;
   overflow: auto;
 }

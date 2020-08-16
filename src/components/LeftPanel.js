@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './LeftPanel.css';
 import DonationForm from './DonationForm';
 import PaypalButtons from './PaypalButtons';
+import BackButton from './BackButton';
 
 export default function LeftPanel() {
 
@@ -21,6 +22,7 @@ export default function LeftPanel() {
             <h1>Welcome to Givest</h1>
             <h4>About us</h4>
             {showForm && (<DonationForm submitForm={(data) => formSubmited(data)} />)}
+            {!showForm && (<BackButton backButtonClicked={() => setShowForm(true)}/>)}
             {!showForm && (<PaypalButtons formData={formDataForPaypal} />)}
         </div>
     )
