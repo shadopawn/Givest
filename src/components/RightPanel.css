@@ -47,6 +47,10 @@
     color: rgba(0, 0, 0, .5);
 }
 
+.Leaderboard span{
+    font-weight: bold;
+}
+
 .Leaderboard a{
     background-color: rgba(0, 0, 0, 0);
     border: 2px solid #000000;

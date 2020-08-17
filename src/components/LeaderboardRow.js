@@ -21,7 +21,7 @@ function LeaderboardRow({row, position}) {
             <td><img src={renderedLogo} alt="Logo" /></td>
             <td>
                 <p className="LeaderboardName">{row.name}</p>
-                <p className="LeaderboardDonationText">Donated ${row.donationAmount.toFixed(2)} to {row.charity}</p>
+                <p className="LeaderboardDonationText">Donated ${row.donationAmount.toFixed(2)} to <span>{row.charity}</span></p>
             </td>
             <td><a href={row.customLink} target="_blank" rel="noopener noreferrer">LINK</a></td>
         </tr>
