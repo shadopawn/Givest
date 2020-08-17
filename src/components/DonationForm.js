@@ -53,7 +53,7 @@ function DonationForm({submitForm}) {
             return false;
         }
 
-        let characterlimit = 30
+        let characterlimit = 25
         if(formData.name.length > characterlimit){
             alert("Please limit name to less than "+characterlimit+" characters")
             return false;
