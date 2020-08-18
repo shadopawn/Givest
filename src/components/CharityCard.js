@@ -5,7 +5,7 @@ function CharityCard({charity}) {
     return (
         <tr>
             <td>
-                <img src={charity.logoURL} alt="logo"/>
+                <img src={charity.logo} alt="logo"/>
             </td>
             <td>
                 <a href={charity.link} target="_blank" rel="noopener noreferrer">{charity.name}</a>
