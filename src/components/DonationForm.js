@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { charityList } from '../charityInfo';
 import SelectOption from './SelectOption';
 
 function DonationForm({submitForm}) {
-    
+
     let formData = {
         donationAmount: 5,
         name: "Anonymous",
@@ -27,6 +27,8 @@ function DonationForm({submitForm}) {
         }
     };
 
+    //const [selectValue, setSelectValue] = useState("Select Charity");
+
     const handleChange = (event) => {
         const target = event.target;
         const fromName = target.name;
@@ -39,6 +41,7 @@ function DonationForm({submitForm}) {
                 break;
             case "Charity Selection":
                 formData.charity = target.value;
+                //setSelectValue(target.value);
                 break;
             case "Custom Link":
                 formData.customLink = target.value;

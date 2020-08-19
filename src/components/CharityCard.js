@@ -10,7 +10,9 @@ function CharityCard({charity}) {
             <td>
                 <a href={charity.link} target="_blank" rel="noopener noreferrer">{charity.name}</a>
                 <p>total donations: {charity.totalDonated}</p>
-                <p>{charity.description}</p>
+            </td>
+            <td>
+                <button type="button">DONATE</button>
             </td>
         </tr>
     )

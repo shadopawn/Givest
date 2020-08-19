@@ -23,6 +23,11 @@
   margin-left: 30px;
   color: rgba(255, 255, 255, 0.73);
   font-family: 'Times New Roman', Times, serif;
+  cursor: pointer;
+  transition: .4s;
+}
+.LeftPanel h4:hover{
+  color: rgba(255, 255, 255, 1);
 }
 
 .formContainer{
@@ -107,4 +112,53 @@
 .PayPalButtonContainer{
   height: 75%;
   overflow: auto;
+}
+
+.AboutUsContainer{
+  height: 75%;
+  overflow: auto;
+}
+
+.AboutUsText{
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
+.AboutUsContainer p{
+  margin-top: 0px;
+}
+.AboutUsContainer h2{
+  margin-bottom: 5px;
+}
+
+.AboutUsContainer table{
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+.AboutUsContainer img{
+  width: 60px;
+}
+
+.AboutUsContainer a:link{
+  color: #58ABF8;
+}
+.AboutUsContainer a:visited{
+  color: #a8d1f8;
+}
+
+.AboutUsContainer button{
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: var(--standard-shadow);
+  border: 1.5px solid #FFFFFF;
+  border-radius: 20px;
+  color: white;
+  padding: 6px 15px;
+  font-size: var(--form-font-size);
+  margin-top: 10px;
+  transition-duration: 0.4s;
+}
+.AboutUsContainer button:hover{
+  background-color: #4b4b4b;
 }
