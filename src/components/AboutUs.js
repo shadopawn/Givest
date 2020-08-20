@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react'
-import { totalDonated } from '../firebaseFunctions'
+import PropTypes from 'prop-types'
+import { totalDonated, totalDonationsForCharities } from '../firebaseFunctions'
 import CharityCard from './CharityCard';
 import { charityList } from '../charityInfo';
 
-export default function AboutUs() {
+function AboutUs({donateButtonFunction}) {
     
     const [total, setTotal] = useState(0);
+    const [charityTotalDonated, setCharityTotal] = useState();
 
     useEffect(() => {
         totalDonated(setTotal);
+        totalDonationsForCharities(setCharityTotal);
     }, [])
 
     return (
@@ -22,10 +25,16 @@ export default function AboutUs() {
             <table>
                 <tbody>
                     {charityList.map((item, index) => (
-                        <CharityCard key={index} charity={item}/>
+                        <CharityCard key={index} charity={item} donateButtonFunction={donateButtonFunction} charityTotalDonated={charityTotalDonated}/>
                     ))}
                 </tbody>
             </table>
         </div>
     )
 }
+
+AboutUs.propTypes = {
+    donateButtonFunction: PropTypes.func,
+}
+
+export default AboutUs

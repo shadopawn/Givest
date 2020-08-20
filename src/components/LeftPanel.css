@@ -157,7 +157,6 @@
   color: white;
   padding: 6px 15px;
   font-size: var(--form-font-size);
-  margin-top: 10px;
   transition-duration: 0.4s;
 }
 .AboutUsContainer button:hover{

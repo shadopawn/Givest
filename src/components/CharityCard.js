@@ -1,7 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function CharityCard({charity}) {
+function CharityCard({charity, donateButtonFunction, charityTotalDonated}) {
+    
+    let charityDonationSum = 0;
+    if(charityTotalDonated){
+        charityDonationSum = charityTotalDonated[charity.name];
+    }
+    
     return (
         <tr>
             <td>
@@ -9,10 +15,10 @@ function CharityCard({charity}) {
             </td>
             <td>
                 <a href={charity.link} target="_blank" rel="noopener noreferrer">{charity.name}</a>
-                <p>total donations: {charity.totalDonated}</p>
+                <p>total donations: ${charityDonationSum.toFixed(2)}</p>
             </td>
             <td>
-                <button type="button">DONATE</button>
+                <button type="button" onClick={() => donateButtonFunction()}>DONATE</button>
             </td>
         </tr>
     )
@@ -26,6 +32,8 @@ CharityCard.propTypes = {
         logo: PropTypes.string,
         totalDonated: PropTypes.number,
     }),
+    donateButtonFunction: PropTypes.func,
+    charityTotalDonated: PropTypes.object,
 }
 
 export default CharityCard

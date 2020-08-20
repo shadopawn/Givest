@@ -37,7 +37,7 @@ export default function LeftPanel() {
             {!(showPaypalButtons || showAboutUs) && (<DonationForm submitForm={(data) => formSubmited(data)} />)}
             {(showPaypalButtons || showAboutUs) && (<BackButton backButtonClicked={() => backButtonClicked()}/>)}
             {showPaypalButtons && (<PaypalButtons formData={formDataForPaypal} />)}
-            {showAboutUs && (<AboutUs />)}
+            {showAboutUs && (<AboutUs donateButtonFunction={() => backButtonClicked()} />)}
         </div>
     )
 }
