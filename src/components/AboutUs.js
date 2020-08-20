@@ -15,7 +15,7 @@ export default function AboutUs() {
         <div className="AboutUsContainer">
             <h2 className="AboutUsText" >What is Givest?</h2>
             <p className="AboutUsText">Givest is a website that allows you to donate to charity and see your donation ranked among other donors.</p>
-            <h2 className="AboutUsText">How we process donations</h2>
+            <h2 className="AboutUsText">How do we process donations?</h2>
             <p className="AboutUsText">Donations made throught Givest are sent directly to the charity of your choice.</p>
             <h2 className="AboutUsText">Charities</h2>
             <p className="AboutUsText">Total donated so far: ${total.toFixed(2)}</p>
