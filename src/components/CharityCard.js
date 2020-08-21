@@ -5,7 +5,7 @@ function CharityCard({charity, donateButtonFunction, charityTotalDonated}) {
     
     let charityDonationSum = 0;
     if(charityTotalDonated){
-        charityDonationSum = charityTotalDonated[charity.name];
+        charityDonationSum = charityTotalDonated[charity.name] ?? 0;
     }
     
     return (
