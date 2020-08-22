@@ -24,4 +24,3 @@ describe('Renders app components', () => {
 		expect(donateButton).toBeInTheDocument();
 	});
 });
-

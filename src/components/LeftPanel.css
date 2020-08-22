@@ -113,6 +113,9 @@
   height: 75%;
   overflow: auto;
 }
+.PayPalButtons{
+  margin: 10px 25px 25px;
+}
 
 .AboutUsContainer{
   height: 75%;
