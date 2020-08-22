@@ -46,7 +46,7 @@ export function totalDonationsForCharities(callBackFunction){
                 donationDict[charityName] = currentDonationAmount;
             }
         });
-        //console.log(donationDict);
+        //console.log(donationDict)
         if(callBackFunction)
             callBackFunction(donationDict);
     });

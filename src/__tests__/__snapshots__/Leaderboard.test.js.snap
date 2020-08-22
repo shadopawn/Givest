@@ -5,18 +5,33 @@ Array [
   <tr
     data-testid="leaderboard-row"
   >
-    <td>
+    <td
+      class="LeaderboardPosition"
+    >
       1
     </td>
     <td>
-      $
-      100.00
+      <img
+        alt="Logo"
+        src="Developers.png"
+      />
     </td>
     <td>
-      Japperales
-    </td>
-    <td>
-      Red Cross
+      <p
+        class="LeaderboardName"
+      >
+        Japperales
+      </p>
+      <p
+        class="LeaderboardDonationText"
+      >
+        Donated $
+        100.00
+         to 
+        <span>
+          Red Cross
+        </span>
+      </p>
     </td>
     <td>
       <a
@@ -24,25 +39,40 @@ Array [
         rel="noopener noreferrer"
         target="_blank"
       >
-        Link
+        LINK
       </a>
     </td>
   </tr>,
   <tr
     data-testid="leaderboard-row"
   >
-    <td>
+    <td
+      class="LeaderboardPosition"
+    >
       2
     </td>
     <td>
-      $
-      75.00
+      <img
+        alt="Logo"
+        src="Aspca_Logo.png"
+      />
     </td>
     <td>
-      Delitt
-    </td>
-    <td>
-      ASPCA
+      <p
+        class="LeaderboardName"
+      >
+        Delitt
+      </p>
+      <p
+        class="LeaderboardDonationText"
+      >
+        Donated $
+        75.00
+         to 
+        <span>
+          ASPCA
+        </span>
+      </p>
     </td>
     <td>
       <a
@@ -50,7 +80,7 @@ Array [
         rel="noopener noreferrer"
         target="_blank"
       >
-        Link
+        LINK
       </a>
     </td>
   </tr>,
