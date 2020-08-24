@@ -22,9 +22,9 @@ html, body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0); 
+  background: rgba(0, 0, 0, 0);
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgb(158, 158, 158);
