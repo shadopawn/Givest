@@ -13,7 +13,6 @@ SelectOption.propTypes = {
         link: PropTypes.string,
         description: PropTypes.string,
         logo: PropTypes.string,
-        totalDonated: PropTypes.number,
     }),
 }
 
