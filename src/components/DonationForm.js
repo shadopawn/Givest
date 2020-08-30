@@ -32,21 +32,11 @@ function DonationForm({submitForm}) {
     const handleChange = (event) => {
         const target = event.target;
         const fromName = target.name;
-        switch(fromName) {
-            case "Donation Amount":
-                formData.donationAmount = parseFloat(target.value);
-                break;
-            case "Name":
-                formData.name = target.value;
-                break;
-            case "Charity Selection":
-                formData.charity = target.value;
-                //setSelectValue(target.value);
-                break;
-            case "Custom Link":
-                formData.customLink = target.value;
-                break;
-            default:
+        if (fromName === "donationAmount"){
+            formData[fromName] = parseFloat(target.value);
+        }
+        else{
+            formData[fromName] = target.value;
         }
     };
 
@@ -87,15 +77,15 @@ function DonationForm({submitForm}) {
 
     return (
         <form onSubmit={(event) => handleSubmit(event)} className="formContainer">
-            <input name="Donation Amount" type="text" placeholder="Donation Amount" onChange={(event) => handleChange(event)}/>
-            <input name="Name" type="text" placeholder="Name" onChange={(event) => handleChange(event)}/>
-            <select name="Charity Selection" onChange={(event) => handleChange(event)}>
+            <input name="donationAmount" type="text" placeholder="Donation Amount" onChange={(event) => handleChange(event)}/>
+            <input name="name" type="text" placeholder="Name" onChange={(event) => handleChange(event)}/>
+            <select name="charity" onChange={(event) => handleChange(event)}>
                 <option value="Select Charity" disabled selected hidden>Select Charity</option>
                 {charityList.map((item, index) => (
                     <SelectOption key={index} charity={item} />
                 ))}
             </select>
-            <input name="Custom Link" type="text" placeholder="Custom Link" onChange={(event) => handleChange(event)}/>
+            <input name="customLink" type="text" placeholder="Custom Link" onChange={(event) => handleChange(event)}/>
             <input type="submit" value="DONATE NOW" />
         </form>
     )
