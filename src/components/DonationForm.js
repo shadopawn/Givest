@@ -1,4 +1,4 @@
-import React/*, { useState }*/ from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { charityList } from '../charityInfo';
 import SelectOption from './SelectOption';
@@ -26,8 +26,6 @@ function DonationForm({submitForm}) {
             console.error("Null submitForm function for DonationForm");
         }
     };
-
-    //const [selectValue, setSelectValue] = useState("Select Charity");
 
     const handleChange = (event) => {
         const target = event.target;
