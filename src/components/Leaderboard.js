@@ -10,7 +10,7 @@ export default function Leaderboard(props) {
         readDonationData(setRows);
     }, [])
     
-    const renderedRows = props.rows ? props.rows : rows;
+    const renderedRows = props.rows ?? rows;
 
     return (
         <div className="LeaderboardContainer">
