@@ -14,7 +14,6 @@ export function readDonationData(callBackFunction){
         snapshot.forEach(function(childSnapshot) {
             donationList.push(childSnapshot.val())
         });
-        //console.log(donationList);
         if (callBackFunction)
             callBackFunction(donationList.reverse());
     });
@@ -27,7 +26,6 @@ export function totalDonated(callBackFunction){
         snapshot.forEach(function(childSnapshot) {
             donationTotal += childSnapshot.child('donationAmount').val();
         });
-        //console.log(donationTotal);
         if(callBackFunction)
             callBackFunction(donationTotal);
     });
@@ -46,7 +44,6 @@ export function totalDonationsForCharities(callBackFunction){
                 donationDict[charityName] = currentDonationAmount;
             }
         });
-        //console.log(donationDict)
         if(callBackFunction)
             callBackFunction(donationDict);
     });
